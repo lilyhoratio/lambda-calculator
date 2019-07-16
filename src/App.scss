@@ -1,7 +1,24 @@
 .container {
     background-color: #A81E37;
+    color: white;
+
+    .calc-button {
+        color: white;
+    }
+
+    .display {
+        background-color: #323335;
+    }
 
     .number-button {
         background-color: #194378;
     }
+
+    .operator-button {
+        background-color: #247192;
+    }
+
+    .special-button {
+        background-color: #225C9E;
+    }   
 }
