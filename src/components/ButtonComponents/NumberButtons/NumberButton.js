@@ -3,11 +3,12 @@ import React from "react";
 //take button as prop and return button element
 
 const NumberButton = (props) => {
-  console.log("props", props)
+  console.log("props", props.number)
   return (
-    <>
-      {/* Display a button element rendering the data being passed down from the parent container on props */}
-    </>
+    <button>
+      {/* Display a button element rendering the data being passed down from the parent container on props */
+      props.number}
+    </button>
   );
 };
 

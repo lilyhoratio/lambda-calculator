@@ -8,7 +8,10 @@ import { numbers } from "./../../../data.js";
 
 const Numbers = () => {
   // STEP 2 - add the imported data to state
-  const [numbers, setNumber] = useState(numbers);
+  const [numbersArr, setNumber] = useState(numbers);
+  // const [numbers, setNumber] = useState(numbers) // mapping error later on because numbers is the import variable name
+
+  console.log("numbers", {numbersArr});
 
   return (
     <div>
@@ -16,7 +19,7 @@ const Numbers = () => {
        component matching the name on the provided file. Pass
        it any props needed by the child component*/
 
-      numbers.map(number => (
+      numbersArr.map(number => (
         <NumberButton number={number} />
       ))
       //  same as this in vanilla JS:
@@ -25,3 +28,6 @@ const Numbers = () => {
     </div>
   );
 };
+
+
+export default Numbers;
