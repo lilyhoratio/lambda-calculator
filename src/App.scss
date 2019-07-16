@@ -15,16 +15,6 @@
         }
     }
 
-    .calc-button {
-        font-size: 2rem;
-        color: white;
-        border: none;
-        border-radius: 50%;
-        padding: 1.5rem;
-        box-shadow: 0px 4px 1px #323335;
-        margin: 3px;
-    }
-
     .display {
         background-color: #323335;
         margin: 2rem;
@@ -34,15 +24,27 @@
         font-size: 3rem;
     }
 
-    .number-button {
-        background-color: #194378;
+    .buttons-container {
+        .calc-button {
+            font-size: 2rem;
+            color: white;
+            border: none;
+            border-radius: 50%;
+            padding: 1.5rem;
+            box-shadow: 0px 4px 1px #323335;
+            margin: 3px;
+        }
+    
+        .number-button {
+            background-color: #194378;
+        }
+    
+        .operator-button {
+            background-color: #247192;
+        }
+    
+        .special-button {
+            background-color: #225C9E;
+        }   
     }
-
-    .operator-button {
-        background-color: #247192;
-    }
-
-    .special-button {
-        background-color: #225C9E;
-    }   
 }
