@@ -2,7 +2,7 @@
     margin: 0 auto;
     background-color: #A81E37;
     color: white;
-    max-width: 500px;
+    max-width: 480px;
     border-radius: 20px;
     padding: 10px;
 
@@ -10,9 +10,6 @@
         width: 90%;
         margin: 0 auto;
         padding-top: 10px;
-        .logo {
-
-        }
     }
 
     .display {
@@ -25,8 +22,16 @@
     }
 
     .buttons-container {
+        display: flex;
+        flex-direction: row;
+        margin: 0 auto;
+        width: 100%;
+        justify-content: center;
+
         .calc-button {
-            font-size: 2rem;
+            height: 80px;
+            width: 80px;
+            font-size: 1.8rem;
             color: white;
             border: none;
             border-radius: 50%;
@@ -34,17 +39,45 @@
             box-shadow: 0px 4px 1px #323335;
             margin: 3px;
         }
-    
-        .number-button {
-            background-color: #194378;
+
+        .left-container {
+            width: 70%;
+            display: flex;
+            flex-direction: column;
+
+            .special-button-container {
+                display: flex;
+                justify-content: space-evenly;
+            }
+
+            .special-button {
+                background-color: #225C9E;
+            }
+            
+            .number-button-container {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-evenly;
+            }
+
+            .number-button {
+                background-color: #194378;
+            }
+
+            .number-button:nth-child(10) {
+                width: 180px;
+                border-radius: 50px;
+            }
         }
-    
-        .operator-button {
-            background-color: #247192;
+
+        .right-container {
+            width: 20%;
+            display: flex;
+            flex-direction: column;
+
+            .operator-button {
+                background-color: #247192;
+            }
         }
-    
-        .special-button {
-            background-color: #225C9E;
-        }   
     }
 }

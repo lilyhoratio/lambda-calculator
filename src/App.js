@@ -25,11 +25,12 @@ function App() {
         {/* STEP 4 - Render your components here and be sure to properly import/export all files */}
         {/* <Display className="display"></Display> */}
         <Display></Display>
-        <div className = "buttons-container">
-          <Specials></Specials>
-          <Numbers></Numbers>
+        <div className="buttons-container">
+          <div className="left-container">
+            <Specials></Specials>
+            <Numbers></Numbers>
+          </div>
           <Operators></Operators>
-          {/* <NumberButton></NumberButton> */}
         </div>
       </div>
     </div>
