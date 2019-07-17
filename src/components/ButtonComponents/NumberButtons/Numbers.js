@@ -9,7 +9,6 @@ import NumberButton from "./NumberButton.js";
 const Numbers = (props) => {
   // STEP 2 - add the imported data to state
   // const [numbersArr, setNumber] = useState(numbers);
-  // console.log("numbers", {props});
 
   return (
     <div className="number-button-container">

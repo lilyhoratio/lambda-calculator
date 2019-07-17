@@ -7,11 +7,9 @@ import "./App.scss";
 // Logo has already been provided for you. Do the same for the remaining components
 import Logo from "./components/DisplayComponents/Logo";
 import Display from "./components/DisplayComponents/Display.js"
-// import NumberButton from "./components/ButtonComponents/NumberButtons/NumberButton.js";
 import Numbers from "./components/ButtonComponents/NumberButtons/Numbers.js";
 import Operators from "./components/ButtonComponents/OperatorButtons/Operators.js";
 import Specials from "./components/ButtonComponents/SpecialButtons/Specials.js";
-
 import { numbers } from "./data.js";
 
 function App() {
@@ -30,7 +28,6 @@ function App() {
       <Logo />
       <div className="App">
         {/* STEP 4 - Render your components here and be sure to properly import/export all files */}
-        {/* <Display className="display"></Display> */}
         <Display display={display} setDisplay={setDisplay}></Display>
         <div className="buttons-container">
           <div className="left-container">
