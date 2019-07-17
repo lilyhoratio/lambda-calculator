@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React from "react";
 
 //import any components needed
 import OperatorButton from "./OperatorButton.js";
@@ -8,9 +8,7 @@ import OperatorButton from "./OperatorButton.js";
 
 const Operators = (props) => {
   // STEP 2 - add the imported data to state
-
   // const [operatorsArr, setOperator] = useState(operators);
-  // console.log("operators array", operatorsArr)
 
   return (
     <div className="right-container">
