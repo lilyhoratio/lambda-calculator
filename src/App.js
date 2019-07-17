@@ -11,6 +11,8 @@ import Numbers from "./components/ButtonComponents/NumberButtons/Numbers.js";
 import Operators from "./components/ButtonComponents/OperatorButtons/Operators.js";
 import Specials from "./components/ButtonComponents/SpecialButtons/Specials.js";
 import { numbers } from "./data.js";
+import { operators } from "./data.js";
+import { specials } from "./data.js";
 
 function App() {
   // STEP 5 - After you get the components displaying using the provided data file, write your state hooks here.
@@ -19,9 +21,10 @@ function App() {
   // the "5" button, or the operator if they click one of those buttons) and then call your setter function to update state.
   // Don't forget to pass the functions (and any additional data needed) to the components as props
   
-  const [numbersArr, setNumber] = useState(numbers);
-  // console.log("NUMBER ARRAY", numbersArr)
   const [display, setDisplay] = useState(0);
+  const [numbersArr, setNumber] = useState(numbers);
+  const [operatorsArr, setOperator] = useState(operators);
+  const [specialsArr, setSpecials] = useState(specials);
 
   return (
     <div className="container">
@@ -31,10 +34,10 @@ function App() {
         <Display display={display} setDisplay={setDisplay}></Display>
         <div className="buttons-container">
           <div className="left-container">
-            <Specials></Specials>
+            <Specials specialsArr={specialsArr} setSpecials={setSpecials}></Specials>
             <Numbers numbersArr={numbersArr} setNumber={setNumber}></Numbers>
           </div>
-          <Operators></Operators>
+          <Operators operatorsArr={operatorsArr} setOperator={setOperator}></Operators>
         </div>
       </div>
     </div>
