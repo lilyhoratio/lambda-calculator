@@ -23,6 +23,7 @@ function App() {
   
   const [numbersArr, setNumber] = useState(numbers);
   // console.log("NUMBER ARRAY", numbersArr)
+  const [display, setDisplay] = useState(0);
 
   return (
     <div className="container">
@@ -30,7 +31,7 @@ function App() {
       <div className="App">
         {/* STEP 4 - Render your components here and be sure to properly import/export all files */}
         {/* <Display className="display"></Display> */}
-        <Display></Display>
+        <Display display={display} setDisplay={setDisplay}></Display>
         <div className="buttons-container">
           <div className="left-container">
             <Specials></Specials>
